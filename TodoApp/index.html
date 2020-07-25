@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoApp-Sarfaraz</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-image: url(./background.jpg);
+    }
+    .li{
+        text-decoration: none;
+        text-align: center;
+        
+    }
+    .container{
+        border: 1px solid black;
+        width: 400px;
+        height: 500px;
+        display: center;
+        margin-top: 50px;
+        margin-left: 400px;
+        background-color: blanchedalmond;
+    }
+    .manage{
+        margin-top: 30px;
+    }
+    .li{
+        list-style: none;
+        
+    }
+    .btn{
+        cursor: pointer;
+    }
+
+
+</style>
+<body>
+   <div class="container">
+    <div class="manage">
+        <input type="text" placeholder="Enter Todo" style="height: 35px;" size="20px" id="todo-item">
+        <button onclick="addTodo()" style="border-radius: 10px; height: 40px; cursor: pointer;">ADD TODO</button>
+        <button onclick="deleteAll()" style="cursor: pointer; border-radius: 10px;height: 40px;">DELETE ALL</button>
+    </div>
+
+    <div>
+        <ul id="list">
+
+        </ul>
+    </div>
+  </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
